@@ -128,3 +128,63 @@
 
 <br/>
 
+<h1 align="center"> Set-up, build and run the project 💫</h1>
+
+### 🍎 macOS
+
+```bash
+# Install SFML
+brew install sfml
+
+# Clone and build
+git clone https://github.com/your-username/vector-visualizer.git
+cd vector-visualizer
+mkdir build && cd build
+cmake ..
+make
+
+# Run it!
+./matrixSFML
+```
+
+### 🐧 Linux (Ubuntu/Debian)
+
+```bash
+# Install dependencies
+sudo apt update
+sudo apt install libsfml-dev cmake build-essential
+
+# Clone and build
+git clone https://github.com/your-username/vector-visualizer.git
+cd vector-visualizer
+mkdir build && cd build
+cmake ..
+make
+
+# Run it!
+./matrixSFML
+```
+### 🪟 Windows (Using MinGW or MSVC)
+
+Install Tools:
+
+- CMake
+
+- SFML for Windows
+
+- A C++ compiler (MSVC or MinGW)
+
+Build with PowerShell:
+
+```powershell
+cd vector-visualizer
+Remove-Item -Recurse -Force build
+mkdir build
+cd build
+cmake .. -G "MinGW Makefiles"
+mingw32-make
+
+# Run the executable: 
+./matrixSFML.exe
+```
+
